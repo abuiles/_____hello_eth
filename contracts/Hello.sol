@@ -5,8 +5,9 @@ contract Hello {
   address private lastCaller;
   address private creator;
 
-  function hello() {
+  function Hello() {
     creator = tx.origin;
+    message = 'mundo';
   }
 
   function getMessage() constant returns(string) {
